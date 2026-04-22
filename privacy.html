@@ -67,19 +67,24 @@
   <div class="container">
     <div class="logo">NoteSurfing</div>
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective date: April 17, 2026 &nbsp;·&nbsp; Last updated: April 8, 2026</p>
+    <p class="meta">Effective date: April 21, 2026 &nbsp;·&nbsp; Last updated: April 21, 2026</p>
 
     <p>NoteSurfing ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains what information we collect, how we use it, and your rights regarding that information when you use the NoteSurfing mobile application (the "App").</p>
 
     <h2>1. Information We Collect</h2>
-    <p><strong>Account information.</strong> When you register using Google, Apple, or Facebook Sign-In, we receive your name and email address from the identity provider. We do not receive or store your social media passwords.</p>
+    <p><strong>Account information.</strong> When you register using Google or Apple Sign-In, we receive your name and email address from the identity provider. We do not receive or store your passwords.</p>
     <p><strong>Usage and progress data.</strong> We collect information about your activity within the App, including lessons completed, streaks, scores, rankings, and subscription status. This data is stored in our database (Supabase) to sync your progress across devices.</p>
-    <p><strong>Audio recordings.</strong> The intonation module uses your device's microphone to analyze your pitch in real time. Audio data is transmitted to a third-party processing service (Groq) for analysis. We also retain audio recordings on our servers for the purpose of improving and training our intonation recognition models. By using the intonation module, you consent to this collection and storage.</p>
+    <p><strong>Audio recordings.</strong> Both the reading and intonation modules use your device's microphone.</p>
+    <ul>
+      <li><strong>Reading module:</strong> short audio clips (typically 5–10 seconds) are transmitted to OpenAI's speech recognition service for real-time transcription. We do not retain the original audio on our servers. OpenAI may retain it for up to 30 days under its API data usage policy for abuse prevention, after which it is deleted automatically.</li>
+      <li><strong>Intonation module:</strong> audio is processed entirely on your device using local pitch-detection algorithms. Audio from this module does not leave your device.</li>
+    </ul>
+    <p><strong>Crash and performance data.</strong> We use Sentry to collect anonymous crash reports and performance metrics (e.g. device model, OS version, stack traces when the App fails). This data helps us diagnose and fix issues.</p>
     <p><strong>Payment information.</strong> Purchases and subscriptions are processed by Apple App Store, Google Play, and RevenueCat. We do not collect or store your payment card details. We receive only confirmation of purchase status from these providers.</p>
     <p><strong>Device information.</strong> We may collect basic device information such as operating system version and device type to ensure compatibility and improve performance.</p>
 
     <div class="highlight">
-      <strong>Note on audio data:</strong> Audio recordings submitted through the intonation module may be stored and used to train and improve our machine learning models. We do not share this audio with third parties for any purpose other than processing (Groq) and model improvement. You may request deletion of your audio data at any time by contacting us.
+      <strong>Note on audio data and model training:</strong> We are developing our own recognition models with the long-term goal of providing real-time feedback entirely on-device, without relying on external services. During this development phase, transcription results and analytics derived from your reading-module audio may be used in aggregated form to train and improve those models. Original audio recordings are not retained on our servers. You may request deletion of derived data at any time by contacting us.
     </div>
 
     <h2>2. How We Use Your Information</h2>
@@ -87,7 +92,8 @@
       <li>To provide, maintain, and personalize the App experience</li>
       <li>To sync your progress and streaks across devices</li>
       <li>To process and verify your subscription status</li>
-      <li>To improve pitch detection accuracy through model training</li>
+      <li>To improve pitch and reading recognition accuracy through model training on aggregated, non-retained audio</li>
+      <li>To diagnose crashes and performance issues</li>
       <li>To communicate with you about your account or the App</li>
       <li>To comply with legal obligations</li>
     </ul>
@@ -95,17 +101,18 @@
     <h2>3. Data Sharing</h2>
     <p>We do not sell your personal data. We share information only with the following third-party services, solely as necessary to operate the App:</p>
     <ul>
-      <li><strong>Groq</strong> – audio processing for real-time pitch analysis</li>
+      <li><strong>OpenAI</strong> – speech-to-text transcription for the reading module</li>
       <li><strong>Supabase</strong> – database and authentication infrastructure</li>
       <li><strong>RevenueCat</strong> – subscription and in-app purchase management</li>
+      <li><strong>Sentry</strong> – crash reporting and performance monitoring</li>
       <li><strong>Apple / Google</strong> – identity verification and payment processing</li>
     </ul>
 
     <h2>4. Data Retention</h2>
-    <p>We retain your account and progress data for as long as your account is active. Audio recordings are retained until you request deletion. You may delete your account and all associated data at any time by contacting us at <a href="mailto:privacy@notesurfing.com">privacy@notesurfing.com</a>.</p>
+    <p>We retain your account and progress data for as long as your account is active. Audio recordings from the reading module are not retained on our servers — they are sent to OpenAI for transcription and the original audio is discarded once the transcription is returned. OpenAI may retain the audio for up to 30 days under its API data usage policy, after which it is automatically deleted. Transcription results and analytics derived from audio may be retained in aggregated form for service improvement purposes. You may delete your account and all associated data at any time by contacting us at <a href="mailto:privacy@notesurfing.com">privacy@notesurfing.com</a>.</p>
 
     <h2>5. Children's Privacy</h2>
-    <p>NoteSurfing is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us and we will delete it promptly.</p>
+    <p>NoteSurfing is designed for use by individuals aged 13 and older. We do not knowingly collect personal information from children under 13. The App may offer UX configurations that allow the registered adult user (13+) to adapt the learning experience for another learner, such as a younger student; in that case, the adult account holder is responsible for the interaction and for complying with their local regulations regarding children's use of digital services. If you believe a child has provided us with personal information directly, please contact us and we will delete it promptly.</p>
 
     <h2>6. Your Rights</h2>
     <p>Depending on your location, you may have rights to access, correct, or delete your personal data. To exercise any of these rights, contact us at <a href="mailto:privacy@notesurfing.com">privacy@notesurfing.com</a>. We will respond within 30 days.</p>
