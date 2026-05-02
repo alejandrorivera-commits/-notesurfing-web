@@ -80,7 +80,7 @@
     <p><strong>Usage and progress data.</strong> We collect information about your activity within the App, including lessons completed, streaks, scores, rankings, and subscription status. This data is stored in our database (Supabase) to sync your progress across devices.</p>
     <p><strong>Audio recordings.</strong> Both the reading and intonation modules use your device's microphone.</p>
     <ul>
-      <li><strong>Reading module:</strong> short audio clips (typically 5–10 seconds) are transmitted to OpenAI's speech recognition service for real-time transcription. We do not retain the original audio on our servers. OpenAI may retain it for up to 30 days under its API data usage policy for abuse prevention, after which it is deleted automatically.</li>
+      <li><strong>Reading module:</strong> short audio recordings (typically 5–30 seconds per exercise) are processed by NoteSurfing for real-time evaluation. These recordings may be securely stored on our servers, associated with a unique identifier of your account, and used to improve our services and train our internal music evaluation models. NoteSurfing does not commercialize, sell, or share these recordings with third parties for advertising purposes.</li>
       <li><strong>Intonation module:</strong> audio is processed entirely on your device using local pitch-detection algorithms. Audio from this module does not leave your device.</li>
     </ul>
     <p><strong>Crash and performance data.</strong> We use Sentry to collect anonymous crash reports and performance metrics (e.g. device model, OS version, stack traces when the App fails). This data helps us diagnose and fix issues.</p>
@@ -88,7 +88,7 @@
     <p><strong>Device information.</strong> We may collect basic device information such as operating system version and device type to ensure compatibility and improve performance.</p>
 
     <div class="highlight">
-      <strong>Note on audio data and model training:</strong> We are developing our own recognition models with the long-term goal of providing real-time feedback entirely on-device, without relying on external services. During this development phase, transcription results and analytics derived from your reading-module audio may be used in aggregated form to train and improve those models. Original audio recordings are not retained on our servers. You may request deletion of derived data at any time by contacting us.
+      <strong>Note on audio data and model training:</strong> NoteSurfing is developing proprietary music evaluation technology. Audio recordings from the reading module, together with their analyses, may be retained on our servers and used to train, refine, and improve our internal models. You may request deletion of your audio data and account at any time by contacting us at <a href="mailto:privacy@notesurfing.com">privacy@notesurfing.com</a>.
     </div>
 
     <h2>2. How We Use Your Information</h2>
@@ -96,7 +96,7 @@
       <li>To provide, maintain, and personalize the App experience</li>
       <li>To sync your progress and streaks across devices</li>
       <li>To process and verify your subscription status</li>
-      <li>To improve pitch and reading recognition accuracy through model training on aggregated, non-retained audio</li>
+      <li>To improve pitch and reading recognition accuracy through analysis and training of our internal models</li>
       <li>To diagnose crashes and performance issues</li>
       <li>To communicate with you about your account or the App</li>
       <li>To comply with legal obligations</li>
@@ -105,15 +105,15 @@
     <h2>3. Data Sharing</h2>
     <p>We do not sell your personal data. We share information only with the following third-party services, solely as necessary to operate the App:</p>
     <ul>
-      <li><strong>OpenAI</strong> – speech-to-text transcription for the reading module</li>
-      <li><strong>Supabase</strong> – database and authentication infrastructure</li>
+      <li><strong>Specialized third-party services</strong> – for technical processing operations such as speech analysis and audio transcription, under data processing agreements</li>
+      <li><strong>Supabase</strong> – database, storage, and authentication infrastructure</li>
       <li><strong>RevenueCat</strong> – subscription and in-app purchase management</li>
       <li><strong>Sentry</strong> – crash reporting and performance monitoring</li>
       <li><strong>Apple / Google</strong> – identity verification and payment processing</li>
     </ul>
 
     <h2>4. Data Retention</h2>
-    <p>We retain your account and progress data for as long as your account is active. Audio recordings from the reading module are not retained on our servers — they are sent to OpenAI for transcription and the original audio is discarded once the transcription is returned. OpenAI may retain the audio for up to 30 days under its API data usage policy, after which it is automatically deleted. Transcription results and analytics derived from audio may be retained in aggregated form for service improvement purposes. You may delete your account and all associated data at any time by contacting us at <a href="mailto:privacy@notesurfing.com">privacy@notesurfing.com</a>.</p>
+    <p>We retain your account and progress data for as long as your account is active. Audio recordings from the reading module may be retained on our servers in association with your account, and used to improve our services and train our music evaluation models. For technical processing of these recordings, NoteSurfing may use specialized third-party services under data processing agreements; these services operate under their own privacy policies and may temporarily retain transmitted information according to their internal policies. You may delete your account and request deletion of all associated data, including audio recordings, at any time by contacting us at <a href="mailto:privacy@notesurfing.com">privacy@notesurfing.com</a>.</p>
 
     <h2>5. Children's Privacy</h2>
     <p>NoteSurfing is designed for use by individuals aged 13 and older. We do not knowingly collect personal information from children under 13. The App may offer UX configurations that allow the registered adult user (13+) to adapt the learning experience for another learner, such as a younger student; in that case, the adult account holder is responsible for the interaction and for complying with their local regulations regarding children's use of digital services. If you believe a child has provided us with personal information directly, please contact us and we will delete it promptly.</p>
