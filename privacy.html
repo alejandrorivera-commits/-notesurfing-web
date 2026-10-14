@@ -1,143 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Privacy Policy – NoteSurfing</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #0D1117;
-      color: #C9D1D9;
-      line-height: 1.7;
-      padding: 48px 24px;
-    }
-    .container { max-width: 720px; margin: 0 auto; }
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 12px;
-    }
-    .brand img.icon { height: 80px; width: auto; }
-    .brand img.wordmark { height: 52px; width: auto; }
-    h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      color: #FFFFFF;
-      margin-bottom: 8px;
-    }
-    .meta {
-      font-size: 0.85rem;
-      color: #8B949E;
-      margin-bottom: 40px;
-    }
-    h2 {
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: #FFFFFF;
-      margin: 36px 0 12px;
-      padding-bottom: 6px;
-      border-bottom: 1px solid #1E2A3D;
-    }
-    p { margin-bottom: 14px; color: #C9D1D9; }
-    ul { padding-left: 20px; margin-bottom: 14px; }
-    li { margin-bottom: 6px; }
-    a { color: #0CC0D8; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .highlight {
-      background: #141B27;
-      border-left: 3px solid #F5B800;
-      padding: 14px 18px;
-      border-radius: 4px;
-      margin: 20px 0;
-      font-size: 0.95rem;
-    }
-    footer {
-      margin-top: 60px;
-      padding-top: 24px;
-      border-top: 1px solid #1E2A3D;
-      font-size: 0.82rem;
-      color: #8B949E;
-      text-align: center;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy · NoteSurfing</title>
+  <meta name="description" content="What data NoteSurfing collects, how it is used and how to exercise your rights.">
+  <link rel="canonical" href="https://notesurfing.com/privacy">
+  <link rel="alternate" hreflang="en" href="https://notesurfing.com/privacy">
+  <link rel="alternate" hreflang="es" href="https://notesurfing.com/privacidad">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#10A697">
+  <meta property="og:title" content="Privacy Policy · NoteSurfing">
+  <meta property="og:image" content="https://notesurfing.com/assets/img/og.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-  <div class="container">
-    <div class="brand">
-      <img class="icon" src="logo-icon.png" alt="" />
-      <img class="wordmark" src="wordmark.png" alt="NoteSurfing" />
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/en/"><img src="/assets/img/app-icon.png" alt="">NoteSurfing</a>
+      <nav class="nav">
+        <a class="hide-sm" href="/support">Help</a>
+        <a class="lang" href="/privacidad" hreflang="es" lang="es">ES</a>
+      </nav>
     </div>
+  </header>
+
+  <main class="doc">
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective date: April 21, 2026 &nbsp;·&nbsp; Last updated: April 21, 2026</p>
+    <p class="meta">Last updated: October 14, 2026</p>
+    <p class="alt-lang"><a href="/privacidad" lang="es">Leer en español</a></p>
 
-    <p>NoteSurfing ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains what information we collect, how we use it, and your rights regarding that information when you use the NoteSurfing mobile application (the "App").</p>
+    <p>This policy explains what information the NoteSurfing app (the "App") collects, what we use it for and what rights you have over it. NoteSurfing is operated by Alejandro Rivera, an independent developer based in Mexico City, Mexico ("we", "us").</p>
 
-    <h2>1. Information We Collect</h2>
-    <p><strong>Account information.</strong> When you register using Google or Apple Sign-In, we receive your name and email address from the identity provider. We do not receive or store your passwords.</p>
-    <p><strong>Usage and progress data.</strong> We collect information about your activity within the App, including lessons completed, streaks, scores, rankings, and subscription status. This data is stored in our database (Supabase) to sync your progress across devices.</p>
-    <p><strong>Audio recordings.</strong> Both the reading and intonation modules use your device's microphone.</p>
+    <h2>1. Information we collect</h2>
+    <p><strong>Account.</strong> You can sign up with Google, with Apple, or with your email and a password. We receive your name and email address. Passwords are stored encrypted by our authentication provider; we cannot see them.</p>
+    <p><strong>Profile and progress.</strong> Your voice type, level, completed lessons, scores, streak, XP and ranking position. We store them so your progress is available on any device where you sign in.</p>
+    <p><strong>Voice recordings.</strong> Several exercises use the microphone to listen to you and grade you:</p>
     <ul>
-      <li><strong>Reading module:</strong> short audio recordings (typically 5–30 seconds per exercise) are processed by NoteSurfing for real-time evaluation. These recordings may be securely stored on our servers, associated with a unique identifier of your account, and used to improve our services and train our internal music evaluation models. NoteSurfing does not commercialize, sell, or share these recordings with third parties for advertising purposes.</li>
-      <li><strong>Intonation module:</strong> audio is processed entirely on your device using local pitch-detection algorithms. Audio from this module does not leave your device.</li>
+      <li><strong>Reading, Repertoire and Kodály:</strong> we record your voice during the exercise and send it to our servers to grade it. To recognize the notes you say, we use specialized speech recognition services.</li>
+      <li><strong>Intonation:</strong> exercises with one or two notes are analyzed on your device, and that audio does not leave it. Longer melodies are recorded and analyzed on our servers.</li>
+      <li><strong>Rhythm and Ear training:</strong> these do not record your voice. You answer by tapping the screen.</li>
     </ul>
-    <p><strong>Crash and performance data.</strong> We use Sentry to collect anonymous crash reports and performance metrics (e.g. device model, OS version, stack traces when the App fails). This data helps us diagnose and fix issues.</p>
-    <p><strong>Payment information.</strong> Purchases and subscriptions are processed by Apple App Store, Google Play, and RevenueCat. We do not collect or store your payment card details. We receive only confirmation of purchase status from these providers.</p>
-    <p><strong>Device information.</strong> We may collect basic device information such as operating system version and device type to ensure compatibility and improve performance.</p>
+    <p>Recordings that reach our servers are stored together with their analysis and linked to an identifier of your account.</p>
+    <p><strong>Subscription.</strong> Payments are processed by the Apple App Store and Google Play and managed through RevenueCat. We never see or store your card details; we only receive your subscription status.</p>
+    <p><strong>Notifications.</strong> If you turn on the daily reminder, we store the time you chose and a device identifier to send you the notification.</p>
+    <p><strong>Errors and performance.</strong> We use Sentry to receive reports when the App crashes: device model, OS version and the technical details of the error.</p>
 
-    <div class="highlight">
-      <strong>Note on audio data and model training:</strong> NoteSurfing is developing proprietary music evaluation technology. Audio recordings from the reading module, together with their analyses, may be retained on our servers and used to train, refine, and improve our internal models. You may request deletion of your audio data and account at any time by contacting us at <a href="mailto:privacy@notesurfing.com">privacy@notesurfing.com</a>.
-    </div>
+    <div class="note"><strong>About your recordings.</strong> We are developing our own technology to evaluate solfège. Recordings and their analysis may be used to improve NoteSurfing and to train our own evaluation models. We do not sell your recordings or use them for advertising.</div>
 
-    <h2>2. How We Use Your Information</h2>
+    <h2>2. How we use it</h2>
     <ul>
-      <li>To provide, maintain, and personalize the App experience</li>
-      <li>To sync your progress and streaks across devices</li>
-      <li>To process and verify your subscription status</li>
-      <li>To improve pitch and reading recognition accuracy through analysis and training of our internal models</li>
-      <li>To diagnose crashes and performance issues</li>
-      <li>To communicate with you about your account or the App</li>
-      <li>To comply with legal obligations</li>
-    </ul>
-
-    <h2>3. Data Sharing</h2>
-    <p>We do not sell your personal data. We share information only with the following third-party services, solely as necessary to operate the App:</p>
-    <ul>
-      <li><strong>Specialized third-party services</strong> – for technical processing operations such as speech analysis and audio transcription, under data processing agreements</li>
-      <li><strong>Supabase</strong> – database, storage, and authentication infrastructure</li>
-      <li><strong>RevenueCat</strong> – subscription and in-app purchase management</li>
-      <li><strong>Sentry</strong> – crash reporting and performance monitoring</li>
-      <li><strong>Apple / Google</strong> – identity verification and payment processing</li>
+      <li>To provide the service: grade your exercises, save your progress and personalize your path.</li>
+      <li>To manage your subscription and each plan's usage limits.</li>
+      <li>To improve how accurately the App listens to you, including training our own models.</li>
+      <li>To detect and fix errors.</li>
+      <li>To send you the daily reminder, if you turn it on, and to contact you about your account.</li>
+      <li>To comply with legal obligations.</li>
     </ul>
 
-    <h2>4. Data Retention</h2>
-    <p>We retain your account and progress data for as long as your account is active. Audio recordings from the reading module may be retained on our servers in association with your account, and used to improve our services and train our music evaluation models. For technical processing of these recordings, NoteSurfing may use specialized third-party services under data processing agreements; these services operate under their own privacy policies and may temporarily retain transmitted information according to their internal policies. You may delete your account and request deletion of all associated data, including audio recordings, at any time by contacting us at <a href="mailto:privacy@notesurfing.com">privacy@notesurfing.com</a>.</p>
+    <h2>3. Who we share it with</h2>
+    <p>We do not sell your data. We only share it with the providers we need to run the App, and only for that purpose:</p>
+    <ul>
+      <li><strong>Supabase:</strong> database, file storage and authentication.</li>
+      <li><strong>Specialized speech recognition and artificial intelligence services:</strong> they process the audio and its transcription to grade your exercises. They may temporarily retain the information they receive under their own policies.</li>
+      <li><strong>RevenueCat, Apple and Google:</strong> subscriptions, payments and sign-in.</li>
+      <li><strong>Sentry:</strong> error reports.</li>
+    </ul>
+    <p>Some of these providers are located outside Mexico, so your information may be stored or processed in other countries, such as the United States. By using the App you agree to this transfer, which is made only for the purposes described here.</p>
 
-    <h2>5. Children's Privacy</h2>
-    <p>NoteSurfing is designed for use by individuals aged 13 and older. We do not knowingly collect personal information from children under 13. The App may offer UX configurations that allow the registered adult user (13+) to adapt the learning experience for another learner, such as a younger student; in that case, the adult account holder is responsible for the interaction and for complying with their local regulations regarding children's use of digital services. If you believe a child has provided us with personal information directly, please contact us and we will delete it promptly.</p>
+    <h2>4. How long we keep it</h2>
+    <p>We keep your account and progress for as long as your account exists. Recordings may be kept on our servers for the purposes described in this policy.</p>
+    <p>You can delete your account at any time in the App, under <strong>Perfil → Ajustes → Eliminar cuenta</strong> (Profile → Settings → Delete account). This deletes your account and your progress. If you also want us to delete your recordings, email <a href="mailto:privacy@notesurfing.com">privacy@notesurfing.com</a> and we will do it.</p>
 
-    <h2>6. Your Rights</h2>
-    <p>Depending on your location, you may have rights to access, correct, or delete your personal data. To exercise any of these rights, contact us at <a href="mailto:privacy@notesurfing.com">privacy@notesurfing.com</a>. We will respond within 30 days.</p>
+    <h2>5. Your rights</h2>
+    <p>You have the right to access your data, correct it, ask us to delete it or object to its use for a specific purpose, and to withdraw your consent. To exercise these rights, email <a href="mailto:privacy@notesurfing.com">privacy@notesurfing.com</a> from your account's email address. We reply within 20 business days.</p>
+
+    <h2>6. Children</h2>
+    <p>NoteSurfing is for people aged 13 and older. We do not knowingly collect data from children under 13. An adult may use their own account to help a younger student; in that case, the adult is responsible for the account. If you believe a child under 13 has given us their data, contact us and we will delete it.</p>
 
     <h2>7. Security</h2>
-    <p>We implement industry-standard security measures to protect your data. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
+    <p>We use industry-standard security measures, such as encrypted connections and access control on our database. No system is perfect, but we work to protect your information.</p>
 
-    <h2>8. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by updating the date at the top of this page and, where appropriate, through in-app notification.</p>
+    <h2>8. Changes to this policy</h2>
+    <p>If we change this policy, we will update the date above and, for significant changes, let you know inside the App.</p>
 
-    <h2>9. Contact Us</h2>
-    <p>If you have questions or requests regarding this Privacy Policy, please contact us at:</p>
-    <p>
-      <strong>NoteSurfing</strong><br/>
-      Mexico City, Mexico<br/>
+    <h2>9. Contact</h2>
+    <div class="contact-box">
+      <strong>NoteSurfing</strong>
+      Mexico City, Mexico<br>
       <a href="mailto:privacy@notesurfing.com">privacy@notesurfing.com</a>
-    </p>
+    </div>
+  </main>
 
-    <footer>
-      &copy; 2026 Alejandro Rivera · NoteSurfing · <a href="/">notesurfing.com</a>
-    </footer>
-  </div>
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 NoteSurfing · Mexico City</span>
+      <nav>
+        <a href="/support">Help</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+        <a href="mailto:support@notesurfing.com">support@notesurfing.com</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
