@@ -115,19 +115,6 @@ img { max-width: 100%; display: block; }
 .hero-visual { position: relative; display: flex; justify-content: center; perspective: 1400px; min-height: 520px; }
 .hero-visual .phone { transform: rotateY(-16deg) rotateX(6deg) rotateZ(4deg); width: min(310px, 72vw); }
 .hero-visual .glow-blob { width: 420px; height: 420px; top: 10%; left: 50%; transform: translateX(-50%); }
-.float-chip {
-  position: absolute; z-index: 2; display: flex; align-items: center; gap: 10px;
-  background: rgba(13, 22, 30, .82); border: 1px solid var(--border); border-radius: 14px;
-  padding: 10px 14px; font-size: 14px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 20px 40px -20px rgba(0,0,0,.8);
-}
-.float-chip b { color: var(--accent); font-size: 18px; }
-.float-chip .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 12px var(--accent); animation: pulse 1.6s ease-in-out infinite; }
-@keyframes pulse { 50% { opacity: .35; } }
-@media (prefers-reduced-motion: reduce) { .float-chip .dot { animation: none; } }
-.chip-a { top: 14%; left: 2%; }
-.chip-b { bottom: 14%; right: 0; }
-@media (max-width: 520px) { .chip-a { left: 0; } .chip-b { right: 0; } }
 
 /* ---------- Secciones ---------- */
 section { position: relative; padding: 88px 0; }
