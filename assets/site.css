@@ -129,15 +129,19 @@ section { position: relative; padding: 88px 0; }
 }
 
 /* Módulos */
-.skills { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); position: relative; z-index: 1; }
+.skills { display: grid; gap: 14px; grid-template-columns: 1fr; position: relative; z-index: 1; }
+@media (min-width: 560px) { .skills { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 900px) { .skills { grid-template-columns: repeat(3, 1fr); } }
 .skill { padding: 26px 22px; transition: border-color .2s ease, transform .2s ease; }
 .skill:hover { border-color: rgba(94, 234, 212, .4); transform: translateY(-3px); }
 .skill .ico {
-  width: 48px; height: 48px; border-radius: 14px; margin-bottom: 18px;
+  width: 60px; height: 60px; border-radius: 16px; margin-bottom: 18px;
   display: flex; align-items: center; justify-content: center;
-  background: linear-gradient(145deg, rgba(43,212,192,.22), rgba(16,166,151,.06)); color: var(--accent);
+  background: color-mix(in srgb, var(--mod, #2BD4C0) 14%, transparent);
+  border: 1px solid color-mix(in srgb, var(--mod, #2BD4C0) 28%, transparent);
 }
-.skill .ico svg { width: 26px; height: 26px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.skill .ico svg { width: 34px; height: 34px; }
+.skill:hover { border-color: color-mix(in srgb, var(--mod, #2BD4C0) 50%, transparent); }
 .skill h3 { font-size: 19px; margin-bottom: 6px; }
 .skill p { color: var(--muted); font-size: 15px; line-height: 1.5; }
 
