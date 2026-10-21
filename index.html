@@ -51,7 +51,7 @@
           <div class="hero-cta">
             <a class="btn btn-primary btn-lg" href="#descargar">Empieza gratis <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           </div>
-          <div class="stores"><a href="https://apps.apple.com/mx/app/notesurfing/id6761601378"><img class="badge-apple" src="/assets/img/badge-appstore-en.svg" alt="Descargar en el App Store"></a><a href="https://play.google.com/store/apps/details?id=com.notesurfing.app"><img class="badge-play" src="/assets/img/badge-play-es.png" alt="Disponible en Google Play"></a></div>
+          <div class="stores"><a href="/descargar/ios/"><img class="badge-apple" src="/assets/img/badge-appstore-es.svg" alt="Descargar en el App Store"></a><a href="/descargar/android/"><img class="badge-play" src="/assets/img/badge-play-es.png" alt="Disponible en Google Play"></a></div>
           <div class="perks"><span><svg viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/></svg>Escucha tu voz</span><span><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Te corrige al instante</span><span><svg viewBox="0 0 24 24"><path d="M3 20h4v-4h4v-4h4V8h4V4"/></svg>Avanzas por niveles</span></div>
         </div>
         <div class="hero-visual">
@@ -119,7 +119,7 @@
           <div>
             <h2>Empieza gratis.<br><span class="accent">Avanza a tu ritmo.</span></h2>
             <p>Descarga NoteSurfing y haz tu primera lectura hoy. Cuando quieras seguir, NoteSurfing PRO abre todos los niveles.</p>
-            <div class="stores"><a href="https://apps.apple.com/mx/app/notesurfing/id6761601378"><img class="badge-apple" src="/assets/img/badge-appstore-en.svg" alt="Descargar en el App Store"></a><a href="https://play.google.com/store/apps/details?id=com.notesurfing.app"><img class="badge-play" src="/assets/img/badge-play-es.png" alt="Disponible en Google Play"></a></div>
+            <div class="stores"><a href="/descargar/ios/"><img class="badge-apple" src="/assets/img/badge-appstore-es.svg" alt="Descargar en el App Store"></a><a href="/descargar/android/"><img class="badge-play" src="/assets/img/badge-play-es.png" alt="Disponible en Google Play"></a></div>
             <p class="free">El Nivel 1 es gratis y completo. Sin tarjeta.</p>
           </div>
           <div class="cta-icon">
@@ -137,6 +137,13 @@
       <nav><a href="/soporte">Ayuda</a><a href="/privacidad">Privacidad</a><a href="/terminos">Términos</a><a href="mailto:support@notesurfing.com">support@notesurfing.com</a></nav>
     </div>
   </footer>
+<script>
+  // Reenvía los utm_* del anuncio a las insignias (/descargar/…), que etiquetan el link de la tienda.
+  (function () {
+    if (!location.search) return;
+    document.querySelectorAll('.stores a[href^="/descargar/"]').forEach(function (a) { a.href = a.getAttribute('href') + location.search; });
+  })();
+</script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9af2535e5bd248c894cbbb906febbbe5"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
